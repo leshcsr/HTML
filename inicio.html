@@ -1,123 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Iluminación Inteligente</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Iluminación Inteligente</title>
 </head>
+
 <body>
-    
-    <div class="contenedor"><!--No quitar este div-->
+
+  <div class="contenedor">
+    <!--No quitar este div-->
 
     <ul class="menu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#luces">Luces</a></li>
-        <li><a href="#rutinas">Rutinas</a></li>
-        <li><a href="soportte.html">Soporte</a></li>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#luces">Luces</a></li>
+      <li><a href="#rutinas">Rutinas</a></li>
+      <li><a href="soportte.html">Soporte</a></li>
+      <li><a href="index.html">Cerrar sesión</a></li>
     </ul>
 
     <div class="inicio" id="inicio">
-        <br><br><br>
-        <img src="casa.png" alt="casa" width="70px">
-        <br> <br>
-        <h1>¡Bienvenido Rodrigo!</h1> <br>
-        <a href="#luces">Iniciar</a>
+      <br><br><br>
+      <img src="casa.png" alt="casa" width="70px">
+      <br> <br>
+      <h1>¡Bienvenido, Rodrigo!</h1> <br>
+      <a href="#luces">Iniciar</a>
     </div>
 
     <div id="luces" class="luces">
-        <p>Buscar habitación: <input type="text" name=search_habit ></p>
-        <br> <br> <br>
+      <p>Buscar habitación: <input type="text" name=search_habit></p>
+      <br> <br> <br>
 
-        <table>
-            <tr><td class="subtitulo" colspan="2"> <strong> Luces Interiores</strong></td></tr>
-            <tr class="cont">
-                <td class="caja"><img src="inodoro.png" alt="" width="30px"> <br>Baño</td>
-                <td>  Focos   </td>
-            </tr>
+      <table>
+        <tr>
+          <td class="subtitulo" colspan="2"> <strong> Luces Interiores</strong></td>
+        </tr>
+
+        <tr class="cont">
+          <td class="caja"><img src="inodoro.png" alt="Editar" width="40px"> <br>Baño</td>
+          <td>
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+
+            <div class="row">
+
+              <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage" />
+                <button style="font-family: verdana;"> <b>Espejo </b> </button>
+
+                <script>  
+                  var img = document.getElementById("bannerImage");
+                  var i = 0;
+                  img.onclick = function diffImage() {
+                    if (i == 0) {
+                      img.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+               <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage1" />
+                <button style="font-family: verdana;"> <b>Foco 2 </b> </button>
+
+                <script>  
+                  var img1 = document.getElementById("bannerImage1");
+                  var i = 0;
+                  img1.onclick = function diffImage1() {
+                    if (i == 0) {
+                      img1.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img1.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+            </div> </tr>
+
+
+
+
+        <tr class="cont">
+          <td class="caja"><img src="sala-de-estar.png" alt="Sala" width="30px"> <br> Sala</td>
+          <td>
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+
+            <div class="row">
+
+              <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage2" />
+                <button style="font-family: verdana;"> <b> Centro</b> </button>
+
+                <script>  
+                  var img2 = document.getElementById("bannerImage2");
+                  var i = 0;
+                  img2.onclick = function diffImage2() {
+                    if (i == 0) {
+                      img2.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img2.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+               <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage3" />
+                <button style="font-family: verdana;"> <b> Sofá</b> </button>
+
+                <script>  
+                  var img3 = document.getElementById("bannerImage3");
+                  var i = 0;
+                  img3.onclick = function diffImage3() {
+                    if (i == 0) {
+                      img3.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img3.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+            </div>
+ 
+        </tr>
+
+
+        
+        <tr class="cont">
+          <td class="caja"><img src="comedor.png" alt="Comedor" width="30px"> <br> Comedor</td>
+          <td>
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+
+            <div class="row">
+
+              <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage4" />
+                <button style="font-family: verdana;"> <b> Central </b> </button>
+
+                <script>  
+                  var img4 = document.getElementById("bannerImage4");
+                  var i = 0;
+                  img4.onclick = function diffImage4() {
+                    if (i == 0) {
+                      img4.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img4.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+               <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage5" />
+                <button style="font-family: verdana;"> <b>Foco 2 </b> </button>
+
+                <script>  
+                  var img5 = document.getElementById("bannerImage5");
+                  var i = 0;
+                  img5.onclick = function diffImage5() {
+                    if (i == 0) {
+                      img5.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img5.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+            </div>
+ 
+        </tr>
+
+
+        
+        <tr class="cont">
+          <td class="caja"><img src="garaje.png" alt="Garage" width="30px"> <br> Garage</td>
+          <td>
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+
+            <div class="row">
+
+              <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage6" />
+                <button style="font-family: verdana;"> <b> Entrada 1 </b> </button>
+
+                <script>  
+                  var img6 = document.getElementById("bannerImage6");
+                  var i = 0;
+                  img6.onclick = function diffImage6() {
+                    if (i == 0) {
+                      img6.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img6.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+               <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage7" />
+                <button style="font-family: verdana;"> <b> Entrada 2 </b> </button>
+
+                <script>  
+                  var img7 = document.getElementById("bannerImage7");
+                  var i = 0;
+                  img7.onclick = function diffImage7() {
+                    if (i == 0) {
+                      img7.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img7.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+            </div>
+ 
+        </tr>
+
+
+        
+        <tr class="cont">
+          <td class="caja"><img src="cama.png" alt="Cama" width="30px"> <br> Habitación 1</td>
+          <td>
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+
+            <div class="row">
+
+              <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage8" />
+                <button style="font-family: verdana;"> <b> Principal </b> </button>
+
+                <script>  
+                  var img8 = document.getElementById("bannerImage8");
+                  var i = 0;
+                  img8.onclick = function diffImage8() {
+                    if (i == 0) {
+                      img8.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img8.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+               <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage9" />
+                <button style="font-family: verdana;"> <b> Escritorio </b> </button>
+
+                <script>  
+                  var img9 = document.getElementById("bannerImage9");
+                  var i = 0;
+                  img9.onclick = function diffImage9() {
+                    if (i == 0) {
+                      img9.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img9.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+            </div>
+ 
+        </tr>
+
+        
+        <tr class="cont">
+          <td class="caja"><img src="cama.png" alt="Cama" width="30px"> <br> Habitación 2</td>
+          <td>
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+
+            <div class="row">
+
+              <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage10" />
+                <button style="font-family: verdana;"> <b> Principal </b> </button>
+
+                <script>  
+                  var img10 = document.getElementById("bannerImage10");
+                  var i = 0;
+                  img10.onclick = function diffImage10() {
+                    if (i == 0) {
+                      img10.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img10.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+               <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage11" />
+                <button style="font-family: verdana;"> <b> Clóset </b> </button>
+
+                <script>  
+                  var img11 = document.getElementById("bannerImage11");
+                  var i = 0;
+                  img11.onclick = function diffImage11() {
+                    if (i == 0) {
+                      img11.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img11.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+            </div>
             
-            <tr class="cont">
-                <td class="caja"><img src="hirviendo.png" alt="" width="30px"> <br> Cocina</td>
-                <td >Focos</td>
-            </tr>
-            <tr class="cont">
-                <td class="caja"><img src="sala-de-estar.png" alt="Sala" width="30px"> <br> Sala</td>
-                <td >Focos</td>
-            </tr> 
-            <tr class="cont">
-                <td class="caja"><img src="comedor.png" alt="Comedor" width="30px"> <br> Comedor</td>
-                <td >Focos</td>
-            </tr> 
-            <tr class="cont">
-                <td class="caja"><img src="garaje.png" alt="Garage" width="30px"> <br> Garage</td>
-                <td >Focos</td>
-            </tr> 
-            <tr class="cont">
-                <td class="caja"><img src="cama.png" alt="Cama" width="30px"> <br> Habitación 1</td>
-                <td >Focos</td>
-            </tr> 
-            <tr class="cont">
-                <td class="caja"><img src="cama.png" alt="Cama" width="30px"> <br> Habitación 2</td>
-                <td >Focos</td>
-            </tr> 
-            <tr class="cont">
-                <td class="caja"><img src="juegos.png" alt="Juegos" width="30px"> <br> GameRoom</td>
-                <td >Focos</td>
-            </tr> 
-                    </table>
+        </tr>
 
-        <br> <br>
+        <tr class="cont">
+          <td class="caja"><img src="cama.png" alt="Cama" width="30px"> <br> Habitación 3</td>
+          <td>
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
 
-        <table>
-            <tr><td class="subtitulo" colspan="2"> <strong> Luces Exteriores </strong></td></tr>
-            <tr class="cont">
-                <td class="caja"><img src="red.png" alt="Cancha de tenis" width="30px"> <br>Cancha de Tenis</td>
-                <td>  Focos  </td>
-            </tr>
+            <div class="row">
+
+              <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImagebb" />
+                <button style="font-family: verdana;"> <b> Principal </b> </button>
+
+                <script>  
+                  var imgbb = document.getElementById("bannerImagebb");
+                  var i = 0;
+                  imgbb.onclick = function diffImagebb() {
+                    if (i == 0) {
+                      imgbb.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      imgbb.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+               <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImageb" />
+                <button style="font-family: verdana;"> <b> Clóset </b> </button>
+
+                <script>  
+                  var imgb = document.getElementById("bannerImageb");
+                  var i = 0;
+                  imgb.onclick = function diffImageb() {
+                    if (i == 0) {
+                      imgb.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      imgb.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+            </div>
             
-            <tr class="cont">
-                <td class="caja"><img src="piscina.png" alt="Alberca" width="30px"> <br> Alberca</td>
-                <td >Focos</td>
-            </tr> 
-            <tr class="cont">
-                <td class="caja"><img src="jardin.png" alt="Jardin" width="30px"> <br> RoofGarden</td>
-                <td >Focos</td>
-            </tr>
-        </table>
+        </tr>
+
+        <tr class="cont">
+          <td class="caja"><img src="cama.png" alt="Cama" width="30px"> <br> Habitación 4</td>
+          <td>
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+
+            <div class="row">
+
+              <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImagea" />
+                <button style="font-family: verdana;"> <b> Entrada </b> </button>
+
+                <script>  
+                  var imga = document.getElementById("bannerImagea");
+                  var i = 0;
+                  imga.onclick = function diffImagea() {
+                    if (i == 0) {
+                      imga.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      imga.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+               <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImageaa" />
+                <button style="font-family: verdana;"> <b> Principal </b> </button>
+
+                <script>  
+                  var imgaa = document.getElementById("bannerImageaa");
+                  var i = 0;
+                  imgaa.onclick = function diffImageaa() {
+                    if (i == 0) {
+                      imgaa.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      imgaa.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+            </div>
+            
+        </tr>
+
+
+        
+        <tr class="cont">
+          <td class="caja"><img src="juegos.png" alt="Juegos" width="30px"> <br> GameRoom</td>
+          <td>
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+
+            <div class="row">
+
+              <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage12" />
+                <button style="font-family: verdana;"> <b> Lado A </b> </button>
+
+                <script>  
+                  var img12 = document.getElementById("bannerImage12");
+                  var i = 0;
+                  img12.onclick = function diffImage12() {
+                    if (i == 0) {
+                      img12.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img12.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+               <div class="column">
+                <img src="focoapagado.png" width="40px" height="40px" id="bannerImage13" />
+                <button style="font-family: verdana;"> <b> Lado B </b> </button>
+
+                <script>  
+                  var img13 = document.getElementById("bannerImage13");
+                  var i = 0;
+                  img13.onclick = function diffImage13() {
+                    if (i == 0) {
+                      img13.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      img13.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+
+              </div>
+
+            </div>
+            
+        </tr>
+
+        
+      </table>
+
+      <br> <br>
+
+
+      
+      <table>
+        <tr>
+          <td class="subtitulo" colspan="2"> <strong> Luces Exteriores </strong></td>
+        </tr>
+        <tr class="cont">
+          <td class="caja"><img src="red.png" alt="Cancha de tenis" width="30px"> <br>Cancha de Tenis</td>
+          <td>
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+              <img src="focoapagado.png" width="40px" height="40px" id="canchaTenis" />
+              <button style="font-family: verdana;"> <b> Principal </b> </button>
+              <script>  
+                  var imgcancha = document.getElementById("canchaTenis");
+                  var i = 0;
+                  imgcancha.onclick = function diffImageCancha() {
+                    if (i == 0) {
+                      imgcancha.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      imgcancha.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+          </td>
+        </tr>
+
+        <tr class="cont">
+          <td class="caja"><img src="piscina.png" alt="Alberca" width="30px"> <br> Alberca</td>
+          <td>
+             <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+              <img src="focoapagado.png" width="40px" height="40px" id="alberca" />
+              <button style="font-family: verdana;"> <b> Fondo </b> </button>
+              <script>  
+                  var imgalberca = document.getElementById("alberca");
+                  var i = 0;
+                  imgalberca.onclick = function diffImagealberca() {
+                    if (i == 0) {
+                      imgalberca.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      imgalberca.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+            
+          
+          </td>
+        </tr>
+        <tr class="cont">
+          <td class="caja"><img src="jardin.png" alt="Jardin" width="30px"> <br> RoofGarden</td>
+          <td>
+
+            <h2 style="font-size:75%; text-align: left;"> Focos </h2>
+              <img src="focoapagado.png" width="40px" height="40px" id="jardin" />
+              <button style="font-family: verdana;"> <b> Entrada </b> </button>
+              <script>  
+                  var imgjardin = document.getElementById("jardin");
+                  var i = 0;
+                  imgjardin.onclick = function diffImagejardin() {
+                    if (i == 0) {
+                      imgjardin.src = 'focoencendid.png';
+                      i = 1;
+                    }
+                    else if (i == 1) {
+                      imgjardin.src = 'focoapagado.png';
+                      i = 0;
+                    }
+                  }
+                </script>
+            
+          </td>
+        </tr>
+      </table>
 
     </div>
 
     <div class="rutinas" id="rutinas">
 
-        <p>Buscar Rutina: <input type="text" name=search_rutina ></p>
-        <br> <br> 
-        <a href="NewPage.html">Agregar Rutina <img src="mas.png" alt="mas" width="15px">  </a>
-        <br><br><br>
-        <table>
-            <tr><td class="subtitulo" colspan="2"> <strong> Rutinas </strong> </td></tr>
-            <tr> <td class="caja">Rutina 1</td>            
-                <td><img src="cambiar (1).png" alt="interruptor" width="50px"></td>
-            </tr>
-            <tr>  <td class="caja">Rutina 2</td>
-                <td><img src="cambiar.png" alt="interruptor" width="50px"></td>            
-            </tr> 
-            <tr>  <td class="caja">Rutina 3</td>
-                <td><img src="cambiar.png" alt="interruptor" width="50px"></td>            
-            </tr>
-            <tr>  <td class="caja">Rutina 4</td>
-                <td><img src="cambiar.png" alt="interruptor" width="50px"></td>            
-            </tr>
-            <tr> <td class="caja">Rutina 5</td>            
-                <td><img src="cambiar (1).png" alt="interruptor" width="50px"></td>
-            </tr>
-        </table>
+      <p>Buscar Rutina: <input type="text" name=search_rutina></p>
+      <br> <br>
+      <a href="NewPage.html">Agregar Rutina <img src="mas.png" alt="mas" width="15px"> </a>
+      <br><br><br>
+      <table>
+        <tr>
+          <td class="subtitulo" colspan="2"> <strong> Rutinas </strong> </td>
+        </tr>
+        <tr>
+          <td class="caja"><strong>Rutina 1 </strong><br> (Baño, comedor, coc...) <br> Lunes-Viernes <br>Inicia: 06:00 am</td>
+          <td>
+            <div class="checkbox">
+              <input type="checkbox" id="click">
+              <label for="click" class="text"></label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="caja"> <strong>Noche con los muchachos</strong> <br> (Sala de juegos, piscina...) <br> Viernes <br> Inicia: 07:00 pm</td>
+          <td>
+            <div class="checkbox">
+              <input type="checkbox" id="click">
+              <label for="click" class="text"></label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="caja"> <strong>Modo Chefsito</strong> <br> (Cocina, comedor...) <br> Sábado <br> Inicia: 06:00 pm</td>
+          <td>
+            <div class="checkbox">
+              <input type="checkbox" id="click">
+              <label for="click" class="text"></label>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
 
 
 
-    </div> <!--No quitar este div-->
-
-   
+  </div>
+  <!--No quitar este div-->
+  
+  
+  
 </body>
+
 </html>
